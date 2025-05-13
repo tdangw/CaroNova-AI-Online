@@ -1,0 +1,353 @@
+/* ============================
+🌐 MOBILE & TABLET RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0a0a1a;
+  }
+
+  .game-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 16px 0 8px;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .player-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .player-name {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  #scoreboard {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+
+  #board {
+    display: grid;
+    place-content: center;
+    margin: 20px auto;
+    width: 90vmin;
+    height: 90vmin;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+
+  .cell {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reaction-bubble,
+  .player-reaction-box {
+    font-size: 12px;
+    padding: 4px 8px;
+    max-width: 120px;
+  }
+
+  .result-overlay,
+  .level-up-overlay {
+    font-size: 1.6rem;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #next-to-name-btn,
+  #start-game-btn,
+  #confirm-name-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  #voice-toggle-icon {
+    font-size: 1rem;
+    bottom: 6px;
+    right: 58px;
+  }
+
+  /* Tối ưu overlay và các popup */
+  .overlay,
+  .popup,
+  .menu-box {
+    width: 90%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .menu-box h2 {
+    font-size: 1.2rem;
+  }
+
+  #main-menu .btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+/* =====================================
+📱 MOBILE & TABLET RESPONSIVE (TOÀN DIỆN)
+===================================== */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0a0a1a;
+    font-size: 14px;
+  }
+
+  .game-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 20px 0 10px;
+    text-shadow: 0 0 10px #00f0ff;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .player-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #0ff;
+  }
+
+  .player-name {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  #scoreboard {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+    padding-top: 6px;
+  }
+
+  #board {
+    display: grid;
+    margin: 12px auto;
+    width: 94vmin;
+    height: 94vmin;
+    grid-template-columns: repeat(auto-fit, minmax(6vmin, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(6vmin, 1fr));
+    gap: 1px;
+  }
+
+  .cell {
+    width: 100%;
+    height: 100%;
+    font-size: 3.2vmin;
+  }
+
+  .reaction-bubble,
+  .player-reaction-box {
+    font-size: 12px;
+    padding: 4px 8px;
+    max-width: 100px;
+  }
+
+  .result-overlay,
+  .level-up-overlay {
+    font-size: 1.8rem;
+    padding: 12px 22px;
+    border-radius: 12px;
+    max-width: 90%;
+    line-height: 1.3;
+  }
+
+  #next-to-name-btn,
+  #start-game-btn,
+  #confirm-name-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  #voice-toggle-icon {
+    font-size: 1.2rem;
+    bottom: 8px;
+    right: 60px;
+    opacity: 0.8;
+  }
+
+  /* Giao diện popup, menu */
+  .overlay,
+  .popup,
+  .menu-box {
+    width: 92%;
+    padding: 14px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+
+  .menu-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  #main-menu .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 6px 0;
+    width: 100%;
+  }
+
+  /* Tooltip, thời gian, trạng thái */
+  #timer,
+  #status {
+    font-size: 0.95rem;
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  /* Giao diện chat / voice / version */
+  #voice-toggle-icon,
+  #version-label {
+    font-size: 0.85rem;
+    margin: 4px;
+  }
+}
+@media (max-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a1a;
+    overflow-x: hidden;
+  }
+
+  .game-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 0 0 8px #00f0ff;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 4px;
+  }
+
+  .player-info {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 4px;
+  }
+
+  .avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  #scoreboard {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  #board {
+    margin: 12px auto;
+    width: 95vmin;
+    height: 95vmin;
+    max-width: 95vmin;
+    max-height: 95vmin;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* tối đa */
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1px;
+    border: 2px solid #00f0ff;
+  }
+
+  .cell {
+    font-size: 3.8vmin;
+    width: 100%;
+    height: 100%;
+  }
+
+  .reaction-bubble,
+  .player-reaction-box {
+    font-size: 12px;
+    padding: 4px 6px;
+    max-width: 90px;
+  }
+
+  .result-overlay,
+  .level-up-overlay {
+    font-size: 1.8rem;
+    padding: 10px 24px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #voice-toggle-icon {
+    font-size: 1.4rem;
+    right: 56px;
+    bottom: 6px;
+    opacity: 0.85;
+  }
+
+  #main-menu .btn,
+  #next-to-name-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin: 6px 0;
+  }
+
+  .overlay,
+  .popup {
+    width: 95%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  #status {
+    font-size: 1rem;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
